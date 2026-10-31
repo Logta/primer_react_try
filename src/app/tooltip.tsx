@@ -1,17 +1,17 @@
-import { Box, Tooltip, Button } from "@primer/react";
+import { Tooltip, Button } from "@primer/react";
 
 export function Tool() {
   return (
-    <Box
-      borderWidth="1px"
-      borderStyle="solid"
-      borderColor="border.default"
-      borderRadius={2}
-      p={3}
+    <div
+      style={{
+        border: "1px solid var(--borderColor-default)",
+        borderRadius: 6,
+        padding: 16,
+      }}
     >
-      <Tooltip aria-label="Hello, Tooltip!">
+      <Tooltip text="Hello, Tooltip!">
         <Button>Hover me</Button>
       </Tooltip>
-    </Box>
+    </div>
   );
 }
